@@ -1,0 +1,63 @@
+:root {
+    --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%233D5473' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2305DBF2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+[data-color-scheme="dark"] {
+    --color-background: #060826;
+    --color-surface: #19073d;
+    --color-text: #ffffff;
+    --color-text-secondary: #9b0ae8;
+    --color-primary: #9b0ae8;
+    --color-primary-text-hover: #ffffff;
+    --color-primary-hover: #7c459c;
+    --color-primary-active: #3b1a68;
+    --color-secondary: #2b129b;
+    --color-secondary-text: #ffffff;
+    --color-secondary-hover: #9b0ae8;
+    --color-secondary-active: #3b1a68;
+    --color-border: #3b1a68;
+    --color-btn-primary-text: #ffffff;
+    --color-card-border: #3b1a68;
+    --color-card-border-inner: #210868;
+    --color-error: #bf463b;
+    --color-success: #2b129b;
+    --color-warning: #9b0ae8;
+    --color-info: #2b129b;
+    --color-focus-ring: rgba(140, 26, 217, 0.4);
+    --color-select-caret: #9b0ae8;
+    --text-shadow: rgba(0, 0, 0, 0.564);
+}
+
+[data-color-scheme="light"] {
+    --color-background: #F2F2F2;
+    --color-surface: #f1e8df;
+    --color-text: #222222;
+    --color-text-secondary: #3D5473;
+    --color-primary: #3D5473;
+    --color-primary-hover: #7f89b4;
+    --color-primary-text-hover: #ffffff;
+    --color-primary-active: #732D14;
+    --color-secondary: #403529;
+    --color-secondary-text: #ffffff;
+    --color-secondary-hover: #3D5473;
+    --color-secondary-active: #732D14;
+    --color-border: #3D5473;
+    --color-btn-primary-text: #ffffff;
+    --color-card-border: #3D5473;
+    --color-card-border-inner: #403529;
+    --color-error: #732D14;
+    --color-success: #3D5473;
+    --color-warning: #F2DAC4;
+    --color-info: #3D5473;
+    --color-button-text: #ffffff;
+    --color-focus-ring: rgba(61, 84, 115, 0.4);
+    --text-shadow: rgba(206, 206, 206, 0.153);
+    /* Subtle text shadow for depth */
+
+    /* RGB versions for light mode */
+    --color-success-rgb: 61, 84, 115;
+    --color-error-rgb: 115, 45, 20;
+    --color-warning-rgb: 242, 218, 196;
+    --color-info-rgb: 61, 84, 115;
+}

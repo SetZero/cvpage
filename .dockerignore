@@ -1,0 +1,10 @@
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Git
+.git/
+.gitignore
+
+# Drone
+.drone.yml

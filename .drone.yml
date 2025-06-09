@@ -1,0 +1,23 @@
+kind: pipeline
+type: kubernetes
+name: website
+
+steps:
+- name: publish_frontend
+  image: plugins/docker
+  environment:
+    SERVER_URL:
+      from_secret: SERVER_URL
+    BASE_URL:
+      from_secret: BASE_URL
+  settings:
+    build_args_from_env: [ SERVER_URL, BASE_URL ]
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    tags: latest
+    cache_from: docker.magical.rocks/dauenhauereu:latest
+    registry: docker.magical.rocks
+    repo: docker.magical.rocks/dauenhauereu
+    dockerfile: Dockerfile

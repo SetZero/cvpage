@@ -1,0 +1,183 @@
+.container {
+    max-width: var(--container-lg);
+    margin: 0 auto;
+    padding: var(--space-24);
+    background: var(--color-background);
+}
+
+.section-title {
+    color: var(--color-text);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-32);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+.skills-grid {
+    display: flex;
+    gap: var(--space-24);
+    width: 100%;
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+    min-width: 0;
+}
+
+.skill-category__title {
+    color: var(--color-text);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-16);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+.skill-tags {
+    flex: 1;
+}
+
+.skills-table {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background: var(--color-surface);
+    border-radius: var(--radius-base);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-card-border);
+    padding: var(--space-16) var(--space-16) var(--space-24) var(--space-16);
+    margin-bottom: var(--space-16);
+}
+
+.category-title {
+    color: var(--color-text);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-16);
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.skill-name {
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+}
+
+.skill-knowledge {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-normal);
+    margin-left: var(--space-8);
+}
+
+.skill-progress {
+    height: 8px;
+    background: var(--color-secondary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    /* Only clips the progress bar */
+}
+
+.progress-bar-container {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    /* Match progress bar height */
+    background: var(--color-secondary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--color-primary);
+    border-radius: var(--radius-full);
+}
+
+.progress-bar[data-years]:not([data-years=""]):after {
+    position: absolute;
+    right: var(--space-8);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-btn-primary-text);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    opacity: 0.85;
+}
+
+.skill-item:hover .progress-bar {
+    background: var(--color-primary-hover);
+}
+
+.skill-item:hover .progress-bar {
+    background: var(--color-primary-hover);
+}
+
+.skill-bubble {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-popover-bg, #222);
+    color: var(--color-popover-text, #fff);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-normal) var(--ease-standard);
+    box-shadow: var(--shadow-md);
+    z-index: 1;
+}
+
+.progress-bar-wrapper {
+    position: relative;
+}
+
+.skill-item:hover .skill-bubble {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.skill-bubble:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px 6px 0;
+    border-style: solid;
+    border-color: var(--color-popover-bg, #222) transparent transparent;
+}
+
+@media (max-width: 1024px) {
+    .skills-grid {
+        flex-direction: column;
+        gap: var(--space-16);
+    }
+
+    .container {
+        padding: var(--space-12);
+    }
+}
