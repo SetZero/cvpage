@@ -9,17 +9,31 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './App.css'
 import './colors.css';
+import { Route, Routes } from 'react-router-dom';
+import NotFoundPage from './components/404';
+
 
 export default function App() {
   return (
     <ThemeProvider>
       <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Experience />
+              <Skills />
+              <Projects />
+              <Contact />
+            </>
+          }
+        />
+        {/* Add more routes for other pages if needed */}
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </ThemeProvider>
   );
 }

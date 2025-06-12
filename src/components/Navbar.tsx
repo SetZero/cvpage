@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="nav" role="navigation" aria-label="Main navigation">
       <div className="nav__container">
-        <a href="#home" className="nav__logo" aria-label="Homepage">Sebastian Dauenhauer</a>
+        <a href="/" className="nav__logo" aria-label="Homepage">Sebastian Dauenhauer</a>
         <div className="nav__menu">
           {navLinks.map(link => (
             <a key={link.href} href={link.href} className="nav__link">
