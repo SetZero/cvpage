@@ -16,6 +16,7 @@ export interface Project {
     tech: string[];
     description: string;
     github: string;
+    images?: string[];
 }
 
 export type KnowledgeLevel =

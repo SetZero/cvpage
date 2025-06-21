@@ -995,13 +995,56 @@ section {
   display: inline-block;
   margin-top: var(--space-12);
   margin-right: var(--space-12);
-  margin-bottom: var(--space-12);
+  margin-bottom: var(--space-0);
 }
 
 .project-card__description {
   line-height: var(--line-height-normal);
   margin-bottom: var(--space-20);
   color: var(--color-text-secondary);
+}
+
+.project-card .lg-react-element  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-card__image {
+  display: inline-flex;
+  margin: var(--space-8);
+}
+
+.project-card__image-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Key to sharp edges */
+  border-radius: var(--radius-lg);
+}
+
+.project-card__image-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px) brightness(0.8) saturate(1.2);
+  border-radius: inherit; /* Ensures the pseudo-element matches the parent */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.project-card__image-wrapper img {
+  position: relative;
+  z-index: 2;
+  border-radius: var(--radius-lg);
+  max-width: 100px;
+  max-height: 100px;
 }
 
 /* Contact */

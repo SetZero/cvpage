@@ -12,10 +12,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Java", years: 3, knowledge: "intermediate" },
       { name: "PHP", years: 2, knowledge: "intermediate" },
       { name: "Python", years: 3, knowledge: "intermediate" },
-      { name: "Go", years: 0, knowledge: "basic" },
-      { name: "C", years: 1, knowledge: "basic" },
-      { name: "C#", years: 0, knowledge: "basic" },
-      { name: "VHDL", years: 0, knowledge: "basic" },
+      { name: "Go", years: 1, knowledge: "basic" },
+      { name: "R", years: 1, knowledge: "basic" },
     ],
   },
   {
@@ -33,6 +31,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Adaptive AUTOSAR", years: 2, knowledge: "intermediate" },
       { name: "KiCad", years: 2, knowledge: "intermediate" },
       { name: "PostgreSQL", years: 2, knowledge: "intermediate" },
+      { name: "PyTorch / Torch", years: 1, knowledge: "basic" },
+      { name: "Tensorflow", years: 1, knowledge: "basic" },
     ],
   },
   {
@@ -108,10 +108,11 @@ export const navLinks = [
 export const projects: Project[] = [
   {
     title: "Fancy Mumble",
-    tech: ["TypeScript", "Rust", "Tauri", "React", "Protobuf"],
+    tech: ["TypeScript", "Rust", "Tauri", "React", "Protobuf", "Android","Windows", "Linux"],
     description:
       "Modern VoIP desktop client for Mumble with enhanced UI/UX and real-time voice features",
-    github: "https://github.com/SetZero/Fancy-Mumble",
+    github: "https://github.com/Fancy-Mumble/FancyMumble",
+    images: ["/refimages/projects/fancy/fancy_start.png", "/refimages/projects/fancy/fancy_chat.png", "/refimages/projects/fancy/fancy_chat_desktop.png"],
   },
   {
     title: "A4963",
@@ -136,9 +137,16 @@ export const projects: Project[] = [
   },
   {
     title: "G474RE-CORDIC",
-    tech: ["C++", "Assembly"],
+    tech: ["C++", "ARM Assembly"],
     description:
       "C++ implementation using CORDIC co-processor on STM32-G474RE to compute trigonometric and hyperbolic functions",
-    github: "https://github.com/SetZero/G474RE‑CORDIC",
+    github: "https://github.com/SetZero/G474RE-CORDIC",
   },
+  {
+    title: "C++ Generic Firmware Loader",
+    tech: ["C++", "ARM Assembly"],
+    description:
+      "Library to load firmware to any device supported by the C++ Generic Bootloader via serial.",
+    github: "https://github.com/firmware-loader/cpp-firmware-loader"
+  }
 ];
