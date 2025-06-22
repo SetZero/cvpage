@@ -1,6 +1,6 @@
 :root {
-    --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%233D5473' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2305DBF2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    --main-logo-svg: url("/circuit-board-microchip-svgrepo-com.svg");
+    --mcu-logo-svg: url("/microchip-svgrepo-com.svg");
 }
 
 [data-color-scheme="dark"] {
@@ -31,7 +31,7 @@
 
 [data-color-scheme="light"] {
     --color-background: #F2F2F2;
-    --color-surface: #f1e8df;
+    --color-surface: #efe9e4;
     --color-text: #222222;
     --color-text-secondary: #3D5473;
     --color-primary: #3D5473;

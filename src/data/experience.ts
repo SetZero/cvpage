@@ -112,7 +112,7 @@ export const projects: Project[] = [
     description:
       "Modern VoIP desktop client for Mumble with enhanced UI/UX and real-time voice features",
     github: "https://github.com/Fancy-Mumble/FancyMumble",
-    images: ["/refimages/projects/fancy/fancy_start.png", "/refimages/projects/fancy/fancy_chat.png", "/refimages/projects/fancy/fancy_chat_desktop.png"],
+    images: ["/refimages/projects/fancy/fancy_start.webp", "/refimages/projects/fancy/fancy_chat.webp", "/refimages/projects/fancy/fancy_chat_desktop.webp"],
   },
   {
     title: "A4963",
@@ -120,6 +120,15 @@ export const projects: Project[] = [
     description:
       "Driver software for the Allegro MicroSystems A4963 motor-driver chip using MCP2210 USB-SPI and ATmega32u4",
     github: "https://github.com/SetZero/A4963",
+    images: ["/refimages/projects/a4963/a4963.webp"],
+  },
+  {
+    title: "G474RE-CORDIC",
+    tech: ["C++", "ARM Assembly"],
+    description:
+      "C++ implementation using CORDIC co-processor on STM32-G474RE to compute trigonometric and hyperbolic functions",
+    github: "https://github.com/SetZero/G474RE-CORDIC",
+    images: ["/refimages/projects/g474re/speed_comparison_boxplot.webp", "/refimages/projects/g474re/speed_comparison_stacked.webp", "/refimages/projects/g474re/g474re.webp"],
   },
   {
     title: "Distant Supervision",
@@ -134,13 +143,6 @@ export const projects: Project[] = [
     description:
       "Example BPMN workflow for a logistics company, built with Camunda, including backend REST APIs and frontend interface",
     github: "https://github.com/SetZero/LogisticsBPMN",
-  },
-  {
-    title: "G474RE-CORDIC",
-    tech: ["C++", "ARM Assembly"],
-    description:
-      "C++ implementation using CORDIC co-processor on STM32-G474RE to compute trigonometric and hyperbolic functions",
-    github: "https://github.com/SetZero/G474RE-CORDIC",
   },
   {
     title: "C++ Generic Firmware Loader",

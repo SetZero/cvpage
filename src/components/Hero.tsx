@@ -13,8 +13,8 @@ const Hero: React.FC = () => (
             Delivering high-performance solutions in challenging technical environments.
           </p>
           <div className="hero__actions">
-            <a href="#contact" className="btn btn--primary">Contact Me</a>
-            <a href="mailto:contact@dauenhauer.eu" className="btn btn--outline">Get In Touch</a>
+            <a href="#contact" className="btn btn--primary">My Links</a>
+            <a href="mailto:contact@dauenhauer.eu" className="btn btn--outline">Contact Me</a>
           </div>
         </div>
         <div className="hero__visual">

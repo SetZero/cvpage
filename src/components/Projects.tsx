@@ -48,6 +48,7 @@ const Projects: React.FC = () => {
                         <img
                           alt={`project-img-${idx}`}
                           src={getThumbnailPath(img)}
+                          loading="lazy"
                         />
                       </div>
                     </a>

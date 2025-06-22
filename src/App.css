@@ -695,17 +695,17 @@ body {
 .hero__avatar {
   width: 300px;
   height: 300px;
+  mask-image: var(--main-logo-svg);
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  border-radius: 50% 30% 70% 40%;
   position: relative;
   animation: float 6s ease-in-out infinite;
 }
 
 .hero__decoration {
   position: absolute;
-  border-radius: 50%;
   opacity: 0.1;
   animation: float 8s ease-in-out infinite;
+  border-radius: 50%;
 }
 
 .hero__decoration--1 {
@@ -1033,10 +1033,17 @@ section {
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
-  filter: blur(6px) brightness(0.8) saturate(1.2);
-  border-radius: inherit; /* Ensures the pseudo-element matches the parent */
+  border-radius: inherit;
   z-index: 1;
   pointer-events: none;
+}
+
+[data-color-scheme="light"] .project-card__image-wrapper::before {
+  filter: blur(6px) brightness(2.8) saturate(0.8);
+}
+
+[data-color-scheme="dark"] .project-card__image-wrapper::before {
+  filter: blur(6px) brightness(0.5) saturate(0.1);
 }
 
 .project-card__image-wrapper img {
