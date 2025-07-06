@@ -35,6 +35,7 @@ const Projects: React.FC = () => {
               {project.images && project.images.length > 0 && (
                 <LightGallery
                   speed={500}
+                  licenseKey="1933D2A0-14494F85-A4FDF437-5CA65250"
                 >
                   {project.images.map((img: string, idx: number) => (
                     <a href={img} key={idx} className="project-card__image">

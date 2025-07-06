@@ -14,6 +14,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Python", years: 3, knowledge: "intermediate" },
       { name: "Go", years: 1, knowledge: "basic" },
       { name: "R", years: 1, knowledge: "basic" },
+      { name: "C#", years: 1, knowledge: "basic" },
     ],
   },
   {
@@ -31,8 +32,11 @@ export const skillCategories: SkillCategory[] = [
       { name: "Adaptive AUTOSAR", years: 2, knowledge: "intermediate" },
       { name: "KiCad", years: 2, knowledge: "intermediate" },
       { name: "PostgreSQL", years: 2, knowledge: "intermediate" },
+      { name: "MySQL", years: 2, knowledge: "intermediate" },
+      { name: "Oracle Database", years: 1, knowledge: "basic" },
       { name: "PyTorch / Torch", years: 1, knowledge: "basic" },
       { name: "Tensorflow", years: 1, knowledge: "basic" },
+      { name: "Zephyr", years: 1, knowledge: "basic" },
     ],
   },
   {
